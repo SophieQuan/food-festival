@@ -1,0 +1,2 @@
+# food-festival
+help a client with an existing web application designed for a food festival. Because event attendees will use the app on their phones, it needs to be fast and performant, especially on mobile. But the application loads very slowly when the client tries to simulate a 4G internet connection using Chrome DevTools. Optimizing the app by minifying assets, adding offline functionality, and turning it into a Progressive Web Application, or PWA.
