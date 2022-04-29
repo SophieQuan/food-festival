@@ -1,3 +1,5 @@
+const webpack = require("webpack");
+
 const path = require("path");
 module.exports = {
   entry: "./assets/js/script.js",
@@ -5,5 +7,11 @@ module.exports = {
     path: path.resolve(__dirname, "dist"),
     filename: "main.bundle.js"
   },
-  mode: "development"
+  mode: "development",
+  plugins: [
+    new webpack.ProvidePlugin({
+      $: "jquery",
+      jQuery: "jquery"
+    })
+  ]
 };
